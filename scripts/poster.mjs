@@ -1,0 +1,5 @@
+import {generate,catalog} from '../server/domain.mjs';import {writeFileSync} from 'node:fs';
+const g=generate(catalog.presets[0].params),p=g.positions,tri=[];
+function project(i){let x=p[i*3],y=p[i*3+1],z=p[i*3+2];const a=.25,b=-.4;const xx=x*Math.cos(a)+z*Math.sin(a),zz=-x*Math.sin(a)+z*Math.cos(a),yy=y*Math.cos(b)-zz*Math.sin(b),depth=y*Math.sin(b)+zz*Math.cos(b);return [500+xx*180,500-yy*180,depth];}
+for(let i=0;i<g.indices.length;i+=3){const t=g.indices.slice(i,i+3).map(project),depth=t.reduce((s,v)=>s+v[2],0)/3;const ax=t[1][0]-t[0][0],ay=t[1][1]-t[0][1],bx=t[2][0]-t[0][0],by=t[2][1]-t[0][1];if(ax*by-ay*bx>0)continue;const shade=Math.round(80+155*Math.abs(Math.sin(depth*4+i*.0001)));tri.push({depth,path:`<path d="M${t.map(v=>v.slice(0,2).map(n=>n.toFixed(1)).join(',')).join('L')}Z" fill="rgb(${shade},${Math.min(255,shade+8)},${Math.min(255,shade+17)})"/>`});}
+tri.sort((a,b)=>a.depth-b.depth);writeFileSync('public/media/sculpture-poster.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">'+tri.map(t=>t.path).join('')+'</svg>');

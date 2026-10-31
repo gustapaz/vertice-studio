@@ -1,0 +1,34 @@
+{
+  "assets": [
+    {
+      "path": "public/media/studio-small-09.hdr",
+      "source": "https://polyhaven.com/a/studio_small_09",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_09_1k.hdr",
+      "author": "Sergej Majboroda / Poly Haven",
+      "license": "CC0 1.0",
+      "license_url": "https://polyhaven.com/license",
+      "verified_at": "2026-10-31T20:44:36.422912+00:00",
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45",
+      "bytes": 1615248,
+      "changes": "Original 1K HDR Radiance file, unchanged. Official API MD5 verified.",
+      "width": 1024,
+      "height": 512,
+      "official_md5": "d5d7eb9d26d341d6aa4d11c1a54fd97c"
+    },
+    {
+      "path": "public/media/concrete-spiral.webp",
+      "source": "https://www.pexels.com/photo/spiral-staircase-with-gray-concrete-walls-5091791/",
+      "download_url": "https://images.pexels.com/photos/5091791/pexels-photo-5091791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "author": "Adrien Olichon",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "verified_at": "2026-10-31T20:44:36.430040+00:00",
+      "sha256": "1237bbab5509aff339a3915ab2263c31541098e334e0b527c9477afc248bc0ad",
+      "bytes": 72330,
+      "changes": "Downloaded optimized 1600px source; converted to RGB, resized without crop to 1400px width, encoded WebP quality 84. Original is monochrome.",
+      "width": 1400,
+      "height": 934,
+      "source_sha256": "a46e73f7dd6ce7b645a3e78b70f531b2be3fd8654d67f7119a61063259eb1d80"
+    }
+  ]
+}

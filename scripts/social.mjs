@@ -1,0 +1,4 @@
+import sharp from 'sharp';import {readFileSync} from 'node:fs';
+const sculpture=readFileSync('public/media/sculpture-poster.svg','utf8').replace('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">','<g transform="translate(500,-120) scale(.85)">').replace('</svg>','</g>');
+const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#101113"/><text x="60" y="75" fill="#f0ecdf" font-family="Arial" font-size="28">VÉRTICE / ATELIÊ DIGITAL</text><text x="55" y="280" fill="#f0ecdf" font-family="Arial" font-size="100">O impossível</text><text x="55" y="390" fill="#f0ecdf" font-family="Arial" font-size="100">tem forma.</text>${sculpture}<text x="60" y="565" fill="#b9b7b2" font-family="Arial" font-size="20">GUSTAVO PAZ / ESTUDOS DE FORMA</text></svg>`;
+await sharp(Buffer.from(svg)).png().toFile('public/media/social.png');console.log('social.png generated');

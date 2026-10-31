@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-10-31T20:54:09.405434+00:00",
+  "files": [
+    {
+      "package": "h3",
+      "source": "node_modules/h3/LICENSE",
+      "file": "vendor/H3-2.0.8-LICENSE",
+      "sha256": "46231df5a7733c3f52f11b71f3df61813007745b62b09031acfb45fb42d75082"
+    },
+    {
+      "package": "valibot",
+      "source": "node_modules/valibot/LICENSE.md",
+      "file": "vendor/Valibot-1.5.0-LICENSE",
+      "sha256": "1ca6c9ca372cffe26c313464b9d9f0aef2417b27b2bad20396f4769005122d4d"
+    },
+    {
+      "package": "@babylonjs/core",
+      "source": "node_modules/@babylonjs/core/license.md",
+      "file": "vendor/BabylonJS-9.33.1-LICENSE.md",
+      "sha256": "9362ea9ea17cb221a20cbbd63f404710834cc273d2a9a7b60314fd68ab702cd6"
+    },
+    {
+      "package": "@babylonjs/core",
+      "source": "node_modules/@babylonjs/core/NOTICE.md",
+      "file": "vendor/BabylonJS-9.33.1-NOTICE.md",
+      "sha256": "7f85d099ce3c6e1900a45ee8d5b8fa405e760c746af687b3ee2081416e48f183"
+    },
+    {
+      "package": "omi",
+      "source": "https://raw.githubusercontent.com/Tencent/omi/047b6bf4f44e125b5ef1e677ff31786d1137c0e7/LICENSE",
+      "file": "vendor/Omi-7.7.14-LICENSE",
+      "sha256": "14ff1db26a3a7d65d55c53c485ee453c96b1e6beee95d8d136a84ed7f7eac5b9",
+      "npm_gitHead": "047b6bf4f44e125b5ef1e677ff31786d1137c0e7"
+    }
+  ]
+}
